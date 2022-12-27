@@ -62,7 +62,9 @@
       <!--Герой-->
       <section class="hero hero-fon">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button primary">Замовити послугу</button>
+        <button type="button" class="button primary" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
       <!--Особливості-->
       <section class="section-features">
@@ -106,28 +108,49 @@
           <h2 class="heading">Чим ми займаємося</h2>
           <ul class="img list">
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/box_1.jpg"
-                alt="ПК"
-                width="370"
-              />
+              <div class="img-wrapper">
+                <div class="img-thumb">
+                  <img
+                    class="img-block"
+                    src="./images/box_1.jpg"
+                    alt="ПК"
+                    width="370"
+                  />
+                </div>
+                <div class="img-box">
+                  <p class="img-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/box_2.jpg"
-                alt="Телефон"
-                width="370"
-              />
+              <div class="img-wrapper">
+                <div class="img-thumb">
+                  <img
+                    class="img-block"
+                    src="./images/box_2.jpg"
+                    alt="Телефон"
+                    width="370"
+                  />
+                </div>
+                <div class="img-box">
+                  <p class="img-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/box_3.jpg"
-                alt="Планшет"
-                width="370"
-              />
+              <div class="img-wrapper">
+                <div class="img-thumb">
+                  <img
+                    class="img-block"
+                    src="./images/box_3.jpg"
+                    alt="Планшет"
+                    width="370"
+                  />
+                </div>
+                <div class="img-box">
+                  <p class="img-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -602,5 +625,20 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="30" height="30">
+            <use
+              href="./images/modal.icon/close.svg.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
