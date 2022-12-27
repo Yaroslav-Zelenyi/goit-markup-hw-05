@@ -514,7 +514,6 @@ padding-bottom: 60px;
  color: #FFFFFF;
  margin-bottom: 20px;
  text-transform: uppercase;
-
 }
 .join { 
  display: flex;
@@ -640,7 +639,6 @@ padding-bottom: 60px;
  padding-right: 24px;
 }
 
-
 .portfolio-link {
  display: block;
  color: currentColor;
@@ -670,7 +668,6 @@ padding-bottom: 60px;
 .portfolio-project .item:nth-last-child(-n + 3) {
  margin-bottom: 0;
  } */
-
  .desc {
  color: var(--title-text-color); 
  font-weight: 700;
